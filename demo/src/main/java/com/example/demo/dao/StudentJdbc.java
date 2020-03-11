@@ -46,13 +46,13 @@ public class StudentJdbc {
     }
 
     public List<Student> getAllLocal() {
-        return jdbcTemplate.query(
+     /*   return jdbcTemplate.query(
                 "SELECT student_local.id, surname, student_local.name, secondname, study_group_id, " +
                         "study_group.name " +
                         "AS study_group " +
                         "FROM student_local INNER JOIN study_group ON student_local.study_group_id = study_group.id",
-                this::mapStudent
-        );
+                this::mapStudent);*/
+        return jdbcTemplate.query("SELECT * FROM STUDENT_LOCAL",this::mapStudent);
     }
 
     public Student get(int id) {

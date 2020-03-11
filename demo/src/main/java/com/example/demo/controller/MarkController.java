@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
 public class MarkController {
-    private final MarkJdbc markJdbc;
+    private final MarkJdbc markJdbc; // OMG SONIC ADVENTURE 2
     public MarkController(MarkJdbc markJdbc) {
         this.markJdbc = markJdbc;
     }
